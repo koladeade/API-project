@@ -4,6 +4,7 @@ function convert() {
     const amount = document.getElementById("amount").value;
 
     const url = `https://api.exchangerate-api.com/v4/latest/${from}`;
+    const API_KEY = '467ec41e3ff670540bcee89c';
 
     fetch(url)
         .then(response => response.json())
